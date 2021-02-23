@@ -12,10 +12,10 @@ const Header = () => {
             </nav>
             <div className="hero">
                 <div className="left__panel">
-                    <Heroimg src={heroLeft} alt="left side panel" />
+                    <Heroimg className="hero__img" src={heroLeft} alt="left side panel" />
                 </div>
                 <div className="right__panel">
-                    <Heroimg src={heroRight} alt="right side panel" />
+                    <Heroimg  className="hero__img" src={heroRight} alt="right side panel" />
                 </div>
                 <div className="hero__text">
                     <h1 className="hero__text__title">
