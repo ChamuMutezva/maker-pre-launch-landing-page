@@ -2,6 +2,7 @@ import logo from '../assets/logo.svg'
 import heroLeft from '../assets/illustration-hero-left.svg'
 import heroRight from '../assets/illustration-hero-right.svg'
 import Heroimg from '../components/Heroimg'
+import iconScroll from '../assets/icon-scroll.svg'
 
 const Header = () => {
     return (
@@ -25,7 +26,7 @@ const Header = () => {
                         own terms. Whether you’re looking to escape the rat race or set up
                         a side hustle, we’ve got you covered.
                     </p>
-
+                    <Heroimg src={iconScroll} alt="icon scroll image" />
                 </div>
             </div>
         </header>
