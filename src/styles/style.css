@@ -113,7 +113,8 @@ body {
   color: #3EE9E5;
 }
 
-.hero__text__main {
+.hero__text__main,
+.feature__container__captions p {
   font-size: 0.9375rem;
   text-align: center;
   line-height: 25px;
@@ -123,6 +124,46 @@ body {
 .image__scroll {
   display: block;
   margin: 55px auto;
+}
+
+/* ----------------------------------------------------
+
+                MAIN SECTION
+                
+------------------------------------------------------- */
+.feature__container__img {
+  width: 120px;
+  height: 124px;
+  margin: auto;
+  background: #093f69;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 45px;
+}
+
+.feature__img {
+  width: 66px;
+}
+
+.feature__container__captions {
+  padding: 24px;
+}
+
+.feature__container__captions h2 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.feature {
+  margin-top: 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -170,6 +211,33 @@ body {
   .image__scroll {
     margin: 50px auto;
   }
+  /* -----------------------------------------
+                FEATURE SECTION
+        ---------------------------------------------------- */
+  .feature__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .feature__container__captions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .hero__text__main,
+  .feature__container__captions p {
+    text-align: left;
+  }
+  .feature__container__captions {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 1180px) {
@@ -180,7 +248,8 @@ body {
   .hero {
     padding-top: 50px;
   }
-  .left__panel .hero__img, .right__panel .hero__img {
+  .left__panel .hero__img,
+  .right__panel .hero__img {
     width: 120%;
     height: 100%;
     /* margin-left: 82px; */

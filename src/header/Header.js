@@ -26,7 +26,7 @@ const Header = () => {
                         own terms. Whether you’re looking to escape the rat race or set up
                         a side hustle, we’ve got you covered.
                     </p>
-                    <img className="image__scroll" src={iconScroll} alt="icon scroll image" />
+                    <img className="image__scroll" src={iconScroll} alt="icon scroll" />
                 </div>
             </div>
         </header>
