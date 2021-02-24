@@ -12,21 +12,21 @@ const Header = () => {
             </nav>
             <div className="hero">
                 <div className="left__panel">
-                    <Heroimg src={heroLeft} alt="left side panel" />
+                    <Heroimg  src={heroLeft} alt="left side panel" />
                 </div>
                 <div className="right__panel">
-                    <Heroimg src={heroRight} alt="right side panel" />
+                    <Heroimg   src={heroRight} alt="right side panel" />
                 </div>
                 <div className="hero__text">
                     <h1 className="hero__text__title">
-                        Get paid for the work you love to do.
+                        Get paid for the work you <span>love</span> to do.
                     </h1>
                     <p className="hero__text__main">
                         The 9-5 grind is so last century. We believe in living life on your
                         own terms. Whether you’re looking to escape the rat race or set up
                         a side hustle, we’ve got you covered.
                     </p>
-                    <Heroimg src={iconScroll} alt="icon scroll image" />
+                    <img className="image__scroll" src={iconScroll} alt="icon scroll image" />
                 </div>
             </div>
         </header>

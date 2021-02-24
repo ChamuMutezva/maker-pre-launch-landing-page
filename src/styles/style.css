@@ -62,7 +62,7 @@ body {
 
 .logo {
   display: block;
-  margin: 40px auto;
+  margin: 40px auto 65px;
 }
 
 .hero {
@@ -70,8 +70,6 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
 }
 
 .right__panel {
@@ -86,21 +84,126 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 2/1/2/3;
-  width: 87.2%;
+  padding: 1.1rem 1.5rem;
   margin: auto;
 }
 
 .hero__img {
   width: 100%;
+  height: 76%;
+}
+
+.right__panel img {
+  width: 120%;
+}
+
+.right__panel {
+  overflow: hidden;
 }
 
 .hero__text__title {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 800;
+  line-height: 40px;
+  padding: 0px 40px 10px;
+}
+
+.hero__text__title span {
+  color: #3EE9E5;
 }
 
 .hero__text__main {
   font-size: 0.9375rem;
+  text-align: center;
+  line-height: 25px;
+  color: #777f98;
+}
+
+.image__scroll {
+  display: block;
+  margin: 55px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    -ms-grid-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
+    padding-top: 15px;
+  }
+  .logo {
+    margin-top: 48px;
+    margin-left: 48px;
+  }
+  .hero__text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1/2/1/3;
+    padding: 1rem 1rem;
+    background-image: url("../assets/bg-hero-squiggle.svg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center top;
+  }
+  .right__panel {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 1/3/1/4;
+  }
+  .left__panel .hero__img,
+  .right__panel .hero__img {
+    width: 200%;
+    height: 100%;
+    -webkit-clip-path: inset(100% 100% 100% 100%);
+            clip-path: inset(100% 100% 100% 100%);
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .left__panel .hero__img {
+    margin-left: -145px;
+  }
+  .hero__text__title {
+    padding: 30px 40px 10px;
+  }
+  .image__scroll {
+    margin: 50px auto;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .logo {
+    margin-top: 81px;
+    margin-left: 165px;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+  .left__panel .hero__img, .right__panel .hero__img {
+    width: 120%;
+    height: 100%;
+    /* margin-left: 82px; */
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .left__panel .hero__img {
+    margin-left: -58px;
+  }
+  .right__panel .hero__img {
+    margin-left: -58px;
+  }
+  .hero__text__title {
+    padding: 30px 140px 10px;
+    font-size: 3rem;
+    line-height: 56px;
+  }
+  .hero__text__main {
+    padding: 10px 150px;
+  }
+  .hero__text {
+    background-size: 60%;
+    background-position: center top;
+  }
 }
 /*# sourceMappingURL=style.css.map */
