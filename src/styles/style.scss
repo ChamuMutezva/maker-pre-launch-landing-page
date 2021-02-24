@@ -105,10 +105,9 @@ body {
     text-align: center;
 }
 
-.feature {
-    margin-top: 72px;
+.feature__parent {
+    padding: 72px 0;
 }
-
 
 @media screen and (min-width: 768px) {
     .hero {
@@ -160,7 +159,14 @@ body {
     .feature__container {
         display: flex;
     }
-
+    .feature__parent {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 80px;
+        gap: 25px;
+       // align-items: flex-end;
+    }
     .feature__container__captions {
         display: flex;
         flex-direction: column;
@@ -171,6 +177,7 @@ body {
     .feature__container__captions p {
         text-align: left;
     }
+
     .feature__container__captions {
         width: 60%;
     }
