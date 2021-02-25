@@ -3,6 +3,7 @@ import financial from '../assets/illustration-financial-freedom.svg'
 import lifestyle from '../assets/illustration-lifestyle.svg'
 import work from '../assets/illustration-work-anywhere.svg'
 import Features from './features'
+import Pricing from './pricing'
 
 const Main = () => {
     return (
@@ -18,6 +19,7 @@ const Main = () => {
                     text=" Selling online means not being pinned down. Want to work AND travel? Go for it!
                 "/>
             </section>
+            <Pricing/>
         </main>
 
     )

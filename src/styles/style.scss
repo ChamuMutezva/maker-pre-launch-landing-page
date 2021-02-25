@@ -78,6 +78,7 @@ body {
                 MAIN SECTION
                 
 ------------------------------------------------------- */
+/* -------------------------FEATURES ------- */
 .feature__container__img {
     width: 120px;
     height: 124px;
@@ -104,9 +105,28 @@ body {
     margin-bottom: 12px;
     text-align: center;
 }
-
+.feature {
+	padding-bottom: 40px;
+}
 .feature__parent {
     padding: 72px 0;
+}
+
+/* -------------------------------------------
+            PRICING
+            ---------------------------------- */
+
+section {
+    padding: 24px;
+}
+.pricing__title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	text-align: center;
+}
+.pricing__description {
+    @include parastyles;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -159,14 +179,16 @@ body {
     .feature__container {
         display: flex;
     }
+
     .feature__parent {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         padding: 80px;
         gap: 25px;
-       // align-items: flex-end;
+        // align-items: flex-end;
     }
+
     .feature__container__captions {
         display: flex;
         flex-direction: column;
@@ -178,8 +200,13 @@ body {
         text-align: left;
     }
 
+    .feature__container__img {
+        // flex-grow: 1;
+    }
+
     .feature__container__captions {
-        width: 60%;
+        //width: 60%;
+        flex-grow: 4;
     }
 }
 
@@ -222,6 +249,19 @@ body {
     .hero__text {
         background-size: 60%;
         background-position: center top;
+    }
+
+    /* -----------------------------------------
+                FEATURE SECTION
+        ---------------------------------------------------- */
+    .feature__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature__parent {
+        flex-wrap: nowrap;
+        flex-direction: row;
     }
 
 }
