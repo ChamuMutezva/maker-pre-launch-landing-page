@@ -105,9 +105,11 @@ body {
     margin-bottom: 12px;
     text-align: center;
 }
+
 .feature {
-	padding-bottom: 40px;
+    padding-bottom: 40px;
 }
+
 .feature__parent {
     padding: 72px 0;
 }
@@ -119,11 +121,13 @@ body {
 section {
     padding: 24px;
 }
+
 .pricing__title {
-	font-size: 1.5rem;
-	font-weight: 800;
-	text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
 }
+
 .pricing__description {
     @include parastyles;
 
@@ -180,11 +184,16 @@ section {
         display: flex;
     }
 
+    .feature {
+        align-self: flex-end;
+        width: 90%;
+    }
+
     .feature__parent {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        padding: 80px;
+        padding: 97px;
         gap: 25px;
         // align-items: flex-end;
     }
@@ -205,8 +214,10 @@ section {
     }
 
     .feature__container__captions {
-        //width: 60%;
-        flex-grow: 4;
+        width: 65%;
+    }
+    .leftalign {
+        align-self: flex-start;
     }
 }
 

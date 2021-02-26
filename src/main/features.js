@@ -1,6 +1,7 @@
 const Features = (props) => {
+    let className = props.leftalign ? 'leftalign' : ''
     return (
-        <div className="feature">
+        <div className={`${className} feature`}>
             <div className="feature__container">
                 <div className="feature__container__img">
                     <img className="feature__img" src={props.src} alt={props.alt} />

@@ -244,6 +244,11 @@ section {
     display: -ms-flexbox;
     display: flex;
   }
+  .feature {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 90%;
+  }
   .feature__parent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -254,7 +259,7 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 80px;
+    padding: 97px;
     gap: 25px;
   }
   .feature__container__captions {
@@ -274,9 +279,11 @@ section {
     text-align: left;
   }
   .feature__container__captions {
-    -webkit-box-flex: 4;
-        -ms-flex-positive: 4;
-            flex-grow: 4;
+    width: 65%;
+  }
+  .leftalign {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
