@@ -1,6 +1,7 @@
 const Card = (props) => {
+    let className = props.limebg ? 'limebg' : ''
     return (
-        <div className="card">
+        <div className={`card ${className}`}>
             <div className="cards__img">
                 <img src={props.src} alt={props.alt} />
             </div>

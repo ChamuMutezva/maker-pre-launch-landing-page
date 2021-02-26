@@ -197,6 +197,16 @@ section {
 ------------------------------------------------ */
 .cards {
   margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 55px;
 }
 
 .card {
@@ -207,6 +217,11 @@ section {
   padding-bottom: 21px;
   border-radius: 8px;
   background-color: #093f68;
+}
+
+.limebg {
+  background-color: #3EE9E5;
+  color: #080c20;
 }
 
 .cards__img {
@@ -237,6 +252,11 @@ section {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 32px;
+}
+
+.products__title span {
+  font-size: .9375rem;
+  font-weight: 300;
 }
 
 .products__list__item {
@@ -297,8 +317,14 @@ section {
   .hero__text__title {
     padding: 30px 40px 10px;
   }
+  .hero__text__main {
+    text-align: center;
+  }
   .image__scroll {
     margin: 50px auto;
+  }
+  section {
+    padding: 0 97px;
   }
   /* -----------------------------------------
                 FEATURE SECTION
@@ -323,8 +349,8 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 97px;
-    gap: 25px;
+    padding: 89px 97px;
+    gap: 0px;
   }
   .feature__container__captions {
     display: -webkit-box;
@@ -338,7 +364,6 @@ section {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .hero__text__main,
   .feature__container__captions p {
     text-align: left;
   }
@@ -348,6 +373,19 @@ section {
   .leftalign {
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+  /* ********************************************
+                CARDS SECTION
+    *********************************************** */
+  .card {
+    padding-bottom: 32px;
+  }
+  .cards {
+    padding: 64px;
+    margin-top: 15px;
+  }
+  .pricing__title {
+    margin-top: -24px;
   }
 }
 
@@ -409,6 +447,17 @@ section {
     -ms-flex-item-align: baseline;
         align-self: baseline;
     margin-bottom: 30px;
+  }
+  /* -----------------------------------------
+                CARDS SECTION
+        ---------------------------------------------------- */
+  .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 /*# sourceMappingURL=style.css.map */
