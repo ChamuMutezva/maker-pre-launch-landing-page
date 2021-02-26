@@ -1,5 +1,6 @@
 import freeversion from '../assets/icon-free.svg'
 import paidversion from '../assets/icon-paid.svg'
+import Card from './card'
 const Pricing = () => {
     return (
         <section>
@@ -13,28 +14,19 @@ const Pricing = () => {
                 </p>
             </div>
             <div className="cards">
-                <div className="card">
-                    <div className="cards__img">
-                        <img src={freeversion} alt="" />
-                    </div>
-                    <div className="cards__info">
-                        <h3>
-                            Dip your toe
-                    </h3>
-                        <p>
-                            Just getting started? No problem at all! Our free plan will take you a long way.
-                   </p>
-                    </div>
-                    <div className="products">
-                        <h3> Free</h3>
-                        <ul>
-                            <li> <span>&#10003;</span>  Unlimited products </li>
-                            <li><span>&#10003;</span> Basic analytics</li>
-                            <li><span>&#10003;</span>  Limited marketplace exposure</li>
-                            <li><span>&#10003;</span>  10% fee per transaction</li>
-                        </ul>
-                    </div>
-                </div>
+                <Card src={freeversion} alt="free version" title="Dip your toe"
+                    description="Just getting started? No problem at all! Our free plan will take you a long way."
+                    subtitle="Free" item1="Unlimited products" item2="Basic analytics"
+                    item3="Limited marketplace exposure" item4="10% fee per transaction"
+                />
+
+                <Card src={paidversion} alt="paid version" title="Dive right in"
+                    description="Ready for the big time? Our paid plan will help you take your business to the next level."
+                    subtitle="$25.00" subtitle2=" /month" item1="Custom domain" item2="Advanced analytics and reports"
+                    item3="High marketplace visibility" item5=" 5% fee per transaction"
+                />
+
+
             </div>
         </section>
     )

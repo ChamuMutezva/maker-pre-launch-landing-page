@@ -182,6 +182,7 @@ section {
   font-size: 1.5rem;
   font-weight: 800;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .pricing__description {
@@ -189,6 +190,69 @@ section {
   text-align: center;
   line-height: 25px;
   color: #777f98;
+}
+
+/* ----------------------------------------------
+            CARDS SECTION
+------------------------------------------------ */
+.cards {
+  margin-top: 70px;
+}
+
+.card {
+  border: 1px solid transparent;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 21px;
+  border-radius: 8px;
+  background-color: #093f68;
+}
+
+.cards__img {
+  position: relative;
+  bottom: 25px;
+}
+
+.cards__info__heading {
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.cards__info__description {
+  font-size: 0.9375rem;
+  text-align: center;
+  line-height: 25px;
+  color: #777f98;
+  text-align: left;
+}
+
+.products {
+  margin-top: 25px;
+}
+
+.products__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+.products__list__item {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 25px;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.products__list__item span {
+  color: #3EE9E5;
+  font-weight: 800;
 }
 
 @media screen and (min-width: 768px) {
@@ -340,6 +404,11 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .leftalign {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
