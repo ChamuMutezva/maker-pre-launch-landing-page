@@ -137,12 +137,13 @@ section {
             CARDS SECTION
 ------------------------------------------------ */
 .cards {
-	margin-top: 70px;
-	display: flex;
+    margin-top: 70px;
+    display: flex;
     flex-direction: column;
-	flex-wrap: wrap;
-	gap: 55px;
+    flex-wrap: wrap;
+    gap: 55px;
 }
+
 .card {
     border: 1px solid transparent;
     position: relative;
@@ -150,12 +151,14 @@ section {
     padding-right: 30px;
     padding-bottom: 21px;
     border-radius: 8px;
-    background-color: #093f68;
+    background-color: $txbgsec-color;
 }
+
 .limebg {
     background-color: $txbg-color;
     color: $bg-main-color;
 }
+
 .cards__img {
     position: relative;
     bottom: 25px;
@@ -167,34 +170,106 @@ section {
     line-height: 25px;
     margin-bottom: 20px;
 }
+
 .cards__info__description {
     @include parastyles;
     text-align: left;
 }
+
 .products {
-	margin-top: 25px;
+    margin-top: 25px;
 }
+
 .products__title {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 32px;
+
     //color: $bg-main-color;
     span {
         font-size: .9375rem;
         font-weight: 300;
     }
 }
+
 .products__list__item {
-	font-size: $small-font;
-	font-weight: 300;
-	line-height: 25px;
-	margin-bottom: 12px;
-	display: flex;
-	gap: 15px;
+    font-size: $small-font;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 15px;
+
     span {
-       color: $txbg-color;
+        color: $txbg-color;
         font-weight: 800;
     }
+}
+
+/* ----------------------------------
+        FOOTER SECTION
+        --------------------------*/
+form {
+    margin-top: 20px;
+
+}
+
+footer {
+    margin-bottom: 100px;
+}
+
+.footer__heading {
+    background-image: url("../assets/bg-footer-squiggle.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 125px;
+
+}
+
+.footer__title {
+    padding: 6px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: auto;
+    text-align: center;
+    line-height: 34px;
+    width: 65%;
+}
+
+label {
+    background-color: inherit;
+}
+
+label,
+.submitbtn {
+    width: 87.2%;
+    max-width: 327px;
+    display: block;
+    margin: auto;
+    border-radius: 24px;
+    border: transparent;
+    overflow: hidden;
+
+}
+
+.submitbtn {
+    font-size: 0.9375rem;
+    line-height: 25px;
+    font-weight: 800;
+    padding: 12px;
+    color: $txbgsec-color;
+    background-color: $txbg-color;
+    margin-top: 24px;
+}
+
+.email__address {
+    width: 100%;
+    padding: 12px;
+    background-color: $txbgsec-color;
+    border: none;
+    line-height: 25px;
+	font-weight: 800;
+	color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -236,6 +311,7 @@ section {
     .hero__text__title {
         padding: 30px 40px 10px;
     }
+
     .hero__text__main {
         text-align: center;
     }
@@ -243,9 +319,11 @@ section {
     .image__scroll {
         margin: 50px auto;
     }
+
     section {
         padding: 0 97px;
     }
+
     /* -----------------------------------------
                 FEATURE SECTION
         ---------------------------------------------------- */
@@ -272,7 +350,7 @@ section {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .feature__container__captions p {
         text-align: left;
     }
@@ -288,18 +366,40 @@ section {
     .leftalign {
         align-self: flex-start;
     }
+
     /* ********************************************
                 CARDS SECTION
     *********************************************** */
     .card {
         padding-bottom: 32px;
     }
-    .cards {       
+
+    .cards {
         padding: 64px;
         margin-top: 15px;
     }
-    .pricing__title {        
+
+    .pricing__title {
         margin-top: -24px;
+    }
+
+    /* ---------------------------------
+    FOOTER
+    ----------------------------------*/
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+    label {       
+        max-width: 320px;       
+    }
+     .submitbtn {
+         max-width: 140px;
+     }
+     label, .submitbtn {       
+        margin: 10px;        
     }
 }
 
@@ -326,7 +426,7 @@ section {
     }
 
     .right__panel .hero__img {
-        margin-left: -58px;
+        margin-left: 0px;
     }
 
     .hero__text__title {
@@ -361,11 +461,12 @@ section {
         align-self: baseline;
         margin-bottom: 30px;
     }
+
     /* -----------------------------------------
                 CARDS SECTION
         ---------------------------------------------------- */
 
-    .cards {       
+    .cards {
         flex-direction: row;
         flex-wrap: nowrap;
     }
