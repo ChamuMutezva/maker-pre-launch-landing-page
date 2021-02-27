@@ -314,7 +314,7 @@ label,
   display: block;
   margin: auto;
   border-radius: 24px;
-  border: transparent;
+  border: 1px solid transparent;
   overflow: hidden;
 }
 
@@ -326,6 +326,16 @@ label,
   color: #093f68;
   background-color: #3EE9E5;
   margin-top: 24px;
+}
+
+.submitbtn:hover {
+  background-color: inherit;
+  color: white;
+  border: 1px solid #3EE9E5;
+}
+
+.submitbtn:focus {
+  border: 2px solid #3EE9E5;
 }
 
 .email__address {

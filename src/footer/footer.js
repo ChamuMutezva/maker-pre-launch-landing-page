@@ -16,8 +16,8 @@ const Footer = () => {
             </div>
 
             <form onSubmit={addNewData}>
-                <label htmlFor="emailAddress">
-                    <input type="email" value={newdata}
+                <label htmlFor="emailAddress"> 
+                    <input type="email" value={newdata} aria-required="true"
                      className="email__address" onChange={changeHandler}
                      id="emailAddress" placeholder="Email address"
                      required />
