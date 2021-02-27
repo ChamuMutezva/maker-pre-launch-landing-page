@@ -369,8 +369,6 @@ label,
   .right__panel .hero__img {
     width: 200%;
     height: 100%;
-    -webkit-clip-path: inset(100% 100% 100% 100%);
-            clip-path: inset(100% 100% 100% 100%);
     -o-object-fit: fill;
        object-fit: fill;
   }

@@ -300,7 +300,7 @@ label,
     .right__panel .hero__img {
         width: 200%;
         height: 100%;
-        clip-path: inset(100% 100% 100% 100%);
+       // clip-path: inset(100% 100% 100% 100%);// not working in chrome
         object-fit: fill;
     }
 

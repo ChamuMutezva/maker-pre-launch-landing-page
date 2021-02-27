@@ -1,13 +1,26 @@
+import { useState } from 'react'
 const Footer = () => {
+    const [newdata, setNewdata] = useState('')
+    const addNewData = (evt) => {       
+        console.log("form handler", evt.target)
+        evt.preventDefault()
+    }
+    const changeHandler = (evt) => {
+        console.log(evt.target.value)
+        setNewdata(evt.target.value)
+    }
     return (
         <footer>
             <div className="footer__heading">
                 <h4 className="footer__title"> Get notified when we launch</h4>
             </div>
 
-            <form>
+            <form onSubmit={addNewData}>
                 <label htmlFor="emailAddress">
-                    <input type="email" className="email__address" id="emailAddress" placeholder="Email address" />
+                    <input type="email" value={newdata}
+                     className="email__address" onChange={changeHandler}
+                     id="emailAddress" placeholder="Email address"
+                     required />
                 </label>
                 <button className="submitbtn" type="submit">Get notified</button>
             </form>
