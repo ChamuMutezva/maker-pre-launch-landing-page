@@ -240,43 +240,68 @@ label {
     background-color: inherit;
 }
 
-label,
-.submitbtn {
-    width: 87.2%;
-    max-width: 327px;
+label {
     display: block;
     margin: auto;
     border-radius: 24px;
     border: 1px solid transparent;
     overflow: hidden;
-
+    width: 320px;
+    max-width: 90%;
 }
 
 .submitbtn {
+    display: block;
+    width: 320px;
+    max-width: 90%;
     font-size: 0.9375rem;
     line-height: 25px;
     font-weight: 800;
     padding: 12px;
     color: $txbgsec-color;
     background-color: $txbg-color;
-    margin-top: 24px;
+    margin: 24px auto;
+    border: 1px solid transparent;
+    overflow: hidden;
+    border-radius: 24px;
 }
+
 .submitbtn:hover {
-	background-color: inherit;
-	color: white;
-	border: 1px solid $txbg-color;
+    background-color: inherit;
+    color: white;
+    border: 1px solid $txbg-color;
 }
+
 .submitbtn:focus {
     border: 2px solid $txbg-color;
 }
+
 .email__address {
     width: 100%;
     padding: 12px;
     background-color: $txbgsec-color;
     border: none;
     line-height: 25px;
-	font-weight: 800;
-	color: white;
+    font-weight: 800;
+    color: white;
+}
+
+/* _____--------------------------------
+        ERROR MESSAGES
+        -----------------------------------*/
+.display__error {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+    line-height: 25px;
+    color: #FF2969;
+}
+.red__border {
+    border: 3px solid #FF2969;
+}
+.show__error {
+    display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -307,7 +332,7 @@ label,
     .right__panel .hero__img {
         width: 200%;
         height: 100%;
-       // clip-path: inset(100% 100% 100% 100%);// not working in chrome
+        // clip-path: inset(100% 100% 100% 100%);// not working in chrome
         object-fit: fill;
     }
 
@@ -399,14 +424,18 @@ label,
         justify-content: center;
         align-items: baseline;
     }
-    label {       
-        max-width: 320px;       
+
+    label {
+      //  max-width: 320px;
     }
-     .submitbtn {
-         max-width: 140px;
-     }
-     label, .submitbtn {       
-        margin: 10px;        
+    .submitbtn {
+        margin: 0;
+        width: 140px;
+    }
+
+    label,
+    .submitbtn {
+      //  margin: 10px;
     }
 }
 
