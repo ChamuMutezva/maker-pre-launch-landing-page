@@ -27,4 +27,4 @@ You can run the app using the live preview link below:
     - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Mobile design preview
-![Mobile preview of finished project]("./src/assets/mobilemaker.png")
+![Mobile preview of finished project](./src/assets/mobilemaker.png)

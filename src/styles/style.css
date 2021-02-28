@@ -561,6 +561,9 @@ label {
         -ms-flex-align: center;
             align-items: center;
   }
+  .feature__container__captions {
+    width: 80%;
+  }
   .feature__parent {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
