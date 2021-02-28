@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 const Footer = () => {
     const inputs = Array.from(document.querySelectorAll(".email__address"))
     const inputfield = document.querySelector(".email__address") //giving null result
