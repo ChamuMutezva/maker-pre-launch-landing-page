@@ -494,15 +494,26 @@ label {
         width: 80%;
     }
 
+    .feature__container__captions h2 {
+        margin-bottom: 35px;
+    }
+
     .feature__parent {
         flex-wrap: nowrap;
         flex-direction: row;
-        padding: 220px 97px;
+        padding: 220px 97px 190px;
+    }
+
+    .feature__container__img {
+        margin-left: 26px;
+        margin-bottom: 15px;
+        width: 160px;
+        height: 164px;
     }
 
     .leftalign {
-        align-self: baseline;
-        margin-bottom: 30px;
+        align-self: self-end;
+        margin-bottom: -50px;
     }
 
     /* ------------------------------------------------------
@@ -512,6 +523,11 @@ label {
     .cards {
         flex-direction: row;
         flex-wrap: nowrap;
+        margin-top: 35px;
+    }
+    .pricing {
+        width: 45%;
+        margin: auto;
     }
 
 }

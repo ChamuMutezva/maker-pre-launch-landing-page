@@ -567,6 +567,9 @@ label {
   .feature__container__captions {
     width: 80%;
   }
+  .feature__container__captions h2 {
+    margin-bottom: 35px;
+  }
   .feature__parent {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -574,12 +577,19 @@ label {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 220px 97px;
+    padding: 220px 97px 190px;
+  }
+  .feature__container__img {
+    margin-left: 26px;
+    margin-bottom: 15px;
+    width: 160px;
+    height: 164px;
   }
   .leftalign {
-    -ms-flex-item-align: baseline;
-        align-self: baseline;
-    margin-bottom: 30px;
+    -ms-flex-item-align: self-end;
+        -ms-grid-row-align: self-end;
+        align-self: self-end;
+    margin-bottom: -50px;
   }
   /* ------------------------------------------------------
                 CARDS SECTION  - DESKTOP SITE
@@ -591,6 +601,11 @@ label {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin-top: 35px;
+  }
+  .pricing {
+    width: 45%;
+    margin: auto;
   }
 }
 
