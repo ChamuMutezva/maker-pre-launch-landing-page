@@ -1,56 +1,53 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 const Footer = () => {
-    const inputs = Array.from(document.querySelectorAll(".email__address"))
-    const inputfield = document.querySelector(".email__address") //giving null result
-    console.log(inputfield)
-    console.log(inputs)
-    inputs.forEach(input => {
-        const label = document.querySelector("label")
+
+    const [newdata, setNewdata] = useState('')
+
+    const formValidation = () => {
+        const inputfield = document.querySelector(".email__address")
         const errorDisplay = document.querySelector(".display__error")
-        input.addEventListener("invalid", () => {
+        const label = document.querySelector("label")
+        inputfield.addEventListener("invalid", () => {
             label.classList.add("red__border")
             errorDisplay.classList.add("show__error")
         })
-    })
 
-    inputs.forEach(input => {
-        const label = document.querySelector("label")
-        const errorDisplay = document.querySelector(".display__error")
-        input.addEventListener("input", function () {
-            if (input.validity.valid) {
+        inputfield.addEventListener("input", function () {
+            if (inputfield.validity.valid) {
                 label.classList.remove("red__border")
                 errorDisplay.classList.remove("show__error")
             }
         })
-    })
-
-
-    //console.log(input)
-    const [newdata, setNewdata] = useState('')
-    const addNewData = (evt) => {
-        //  console.log("form handler", evt.target)
-        evt.preventDefault()
+       // console.log(inputfield)
     }
-    const changeHandler = (evt) => {
+
+    useEffect(() => {
+        formValidation()
+    }, [newdata])
+
+    const submitHandler = (evt) => {
+        //  console.log("form handler", evt.target)
+
+        evt.preventDefault()
+        alert("Thank you , form has been submitted")
+        setNewdata("")
+    }
+    const onChangeHandler = (evt) => {
         //  console.log(evt.target.value)
         setNewdata(evt.target.value)
     }
-    /*
-    useEffect(() => {
 
-    }, [newdata])
-    */
     return (
         <footer>
             <div className="footer__heading">
                 <h4 className="footer__title"> Get notified when we launch</h4>
             </div>
 
-            <form onSubmit={addNewData}>
+            <form onSubmit={submitHandler}>
                 <div className="form__input">
                     <label htmlFor="emailAddress">
                         <input type="email" value={newdata} aria-required="true"
-                            className="email__address" onChange={changeHandler}
+                            className="email__address" onChange={onChangeHandler}
                             id="emailAddress" placeholder="Email address"
                             required />
                     </label>
