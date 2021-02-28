@@ -1,70 +1,30 @@
-# live preview link
-https://maker-pre-launch-landing-page.netlify.app/
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Maker-pre-launch Landing-page
+This is a Frontend Mentor challenge that i completed using React. I am using these Frontend challenges to
+improve my programming skills.
 
-## Available Scripts
+## What i learnt
+Setting styles on components using props of boolean type. Assign a class to the 
+component when the value of the prop is either true or false. Used this method
+as i had more than 1 component in a parent and wanted to style them differently.
+eg: see the `card.js` file , which is the child.
+- the prop was retrieved with this code `let className = props.limebg ? 'limebg' : ''`
+- the parent is found in the `pricing.js` - see how the class `limebg` is assigned
+``` <Card src={paidversion} alt="paid version" title="Dive right in" limebg={true}
+                    description="Ready for the big time? Our paid plan will help you take your business to the next level."
+                    subtitle="$25.00" subtitle2=" /month" item1="Custom domain" item2="Advanced analytics and reports"
+                    item3="High marketplace visibility" item4=" 5% fee per transaction"
+                />
+ ```
 
-In the project directory, you can run:
+## Using the Website
+You can run the app using the live preview link below:
+- **live preview link**
+    https://maker-pre-launch-landing-page.netlify.app/
 
-### `npm start`
+- altenatively you can download the project on github and do the following steps
+    - install dependencies by  executing `npm install` on the terminal
+    - run the project using `npm start`
+    - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Mobile design preview
+![Mobile preview of finished project]("./src/assets/mobilemaker.png")

@@ -586,4 +586,12 @@ label {
         flex-wrap: nowrap;
   }
 }
+
+@media screen and (min-width: 1650px) {
+  #root {
+    width: 95%;
+    max-width: 1490px;
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
