@@ -8,6 +8,7 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
 }
+
 /* ----------------------------------
         HEADER SECTION
         -----------------------------*/
@@ -19,7 +20,7 @@ body {
 
 .hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;   
+    grid-template-columns: 1fr 1fr;
 }
 
 .right__panel {
@@ -185,6 +186,7 @@ section {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 32px;
+
     span {
         font-size: .9375rem;
         font-weight: 300;
@@ -296,14 +298,17 @@ label {
     line-height: 25px;
     color: #FF2969;
 }
+
 .red__border {
     border: 3px solid #FF2969;
 }
+
 .show__error {
     display: block;
 }
 
 @media screen and (min-width: 768px) {
+
     /* ---------------------------------------
             HEADER SECTION - TABLET VIEW
     --------------------------------------------*/
@@ -375,7 +380,7 @@ label {
         flex-wrap: wrap;
         flex-direction: column;
         padding: 89px 97px;
-        gap: 0px;        
+        gap: 0px;
     }
 
     .feature__container__captions {
@@ -421,14 +426,16 @@ label {
         justify-content: center;
         align-items: baseline;
     }
+
     .submitbtn {
         margin: 0;
         width: 140px;
     }
-   
+
 }
 
 @media screen and (min-width: 1180px) {
+
     /* ------------------------------------------------
                 HEADER SECTION - DESKTOP SITE
     ---------------------------------------------------*/
@@ -444,7 +451,7 @@ label {
     .left__panel .hero__img,
     .right__panel .hero__img {
         width: 120%;
-        height: 100%;        
+        height: 100%;
         object-fit: fill;
     }
 
@@ -457,7 +464,7 @@ label {
     }
 
     .hero__text__title {
-        padding: 30px 140px 10px;
+        padding: 50px 140px 10px;
         font-size: 3rem;
         line-height: 56px;
     }
@@ -474,10 +481,15 @@ label {
     /* ------------------------------------------------------
                 FEATURE SECTION - DESKTOP SITE
         ---------------------------------------------------- */
+    section {
+        padding: 20px 97px;
+    }
+
     .feature__container {
         flex-direction: column;
         align-items: center;
     }
+
     .feature__container__captions {
         width: 80%;
     }
@@ -485,6 +497,7 @@ label {
     .feature__parent {
         flex-wrap: nowrap;
         flex-direction: row;
+        padding: 220px 97px;
     }
 
     .leftalign {
@@ -509,5 +522,5 @@ label {
         max-width: 1490px;
         margin: 0 auto;
     }
-   
-  }
+
+}
