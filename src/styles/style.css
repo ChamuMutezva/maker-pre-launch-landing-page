@@ -60,6 +60,9 @@ body {
   font-size: 16px;
 }
 
+/* ----------------------------------
+        HEADER SECTION
+        -----------------------------*/
 .logo {
   display: block;
   margin: 40px auto 65px;
@@ -374,6 +377,9 @@ label {
 }
 
 @media screen and (min-width: 768px) {
+  /* ---------------------------------------
+            HEADER SECTION - TABLET VIEW
+    --------------------------------------------*/
   .hero {
     -ms-grid-columns: 1fr 3fr 1fr;
         grid-template-columns: 1fr 3fr 1fr;
@@ -422,8 +428,8 @@ label {
   section {
     padding: 0 97px;
   }
-  /* -----------------------------------------
-                FEATURE SECTION
+  /* -------------------------------------------------------
+                FEATURE SECTION - TABLET VIEW
         ---------------------------------------------------- */
   .feature__container {
     display: -webkit-box;
@@ -471,7 +477,7 @@ label {
         align-self: flex-start;
   }
   /* ********************************************
-                CARDS SECTION
+                CARDS SECTION - TABLET VIEW
     *********************************************** */
   .card {
     padding-bottom: 32px;
@@ -484,7 +490,7 @@ label {
     margin-top: -24px;
   }
   /* ---------------------------------
-    FOOTER
+                 FOOTER - TABLET VIEW
     ----------------------------------*/
   form {
     display: -webkit-box;
@@ -508,6 +514,9 @@ label {
 }
 
 @media screen and (min-width: 1180px) {
+  /* ------------------------------------------------
+                HEADER SECTION - DESKTOP SITE
+    ---------------------------------------------------*/
   .logo {
     margin-top: 81px;
     margin-left: 165px;
@@ -519,7 +528,6 @@ label {
   .right__panel .hero__img {
     width: 120%;
     height: 100%;
-    /* margin-left: 82px; */
     -o-object-fit: fill;
        object-fit: fill;
   }
@@ -541,8 +549,8 @@ label {
     background-size: 60%;
     background-position: center top;
   }
-  /* -----------------------------------------
-                FEATURE SECTION
+  /* ------------------------------------------------------
+                FEATURE SECTION - DESKTOP SITE
         ---------------------------------------------------- */
   .feature__container {
     -webkit-box-orient: vertical;
@@ -566,8 +574,8 @@ label {
         align-self: baseline;
     margin-bottom: 30px;
   }
-  /* -----------------------------------------
-                CARDS SECTION
+  /* ------------------------------------------------------
+                CARDS SECTION  - DESKTOP SITE
         ---------------------------------------------------- */
   .cards {
     -webkit-box-orient: horizontal;

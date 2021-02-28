@@ -8,7 +8,9 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size: 16px;
 }
-
+/* ----------------------------------
+        HEADER SECTION
+        -----------------------------*/
 
 .logo {
     display: block;
@@ -17,8 +19,7 @@ body {
 
 .hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;   
 }
 
 .right__panel {
@@ -184,8 +185,6 @@ section {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 32px;
-
-    //color: $bg-main-color;
     span {
         font-size: .9375rem;
         font-weight: 300;
@@ -305,6 +304,9 @@ label {
 }
 
 @media screen and (min-width: 768px) {
+    /* ---------------------------------------
+            HEADER SECTION - TABLET VIEW
+    --------------------------------------------*/
     .hero {
         grid-template-columns: 1fr 3fr 1fr;
         padding-top: 15px;
@@ -356,8 +358,8 @@ label {
         padding: 0 97px;
     }
 
-    /* -----------------------------------------
-                FEATURE SECTION
+    /* -------------------------------------------------------
+                FEATURE SECTION - TABLET VIEW
         ---------------------------------------------------- */
     .feature__container {
         display: flex;
@@ -373,8 +375,7 @@ label {
         flex-wrap: wrap;
         flex-direction: column;
         padding: 89px 97px;
-        gap: 0px;
-        // align-items: flex-end;
+        gap: 0px;        
     }
 
     .feature__container__captions {
@@ -387,10 +388,6 @@ label {
         text-align: left;
     }
 
-    .feature__container__img {
-        // flex-grow: 1;
-    }
-
     .feature__container__captions {
         width: 65%;
     }
@@ -400,7 +397,7 @@ label {
     }
 
     /* ********************************************
-                CARDS SECTION
+                CARDS SECTION - TABLET VIEW
     *********************************************** */
     .card {
         padding-bottom: 32px;
@@ -416,7 +413,7 @@ label {
     }
 
     /* ---------------------------------
-    FOOTER
+                 FOOTER - TABLET VIEW
     ----------------------------------*/
     form {
         display: flex;
@@ -424,22 +421,17 @@ label {
         justify-content: center;
         align-items: baseline;
     }
-
-    label {
-      //  max-width: 320px;
-    }
     .submitbtn {
         margin: 0;
         width: 140px;
     }
-
-    label,
-    .submitbtn {
-      //  margin: 10px;
-    }
+   
 }
 
 @media screen and (min-width: 1180px) {
+    /* ------------------------------------------------
+                HEADER SECTION - DESKTOP SITE
+    ---------------------------------------------------*/
     .logo {
         margin-top: 81px;
         margin-left: 165px;
@@ -452,8 +444,7 @@ label {
     .left__panel .hero__img,
     .right__panel .hero__img {
         width: 120%;
-        height: 100%;
-        /* margin-left: 82px; */
+        height: 100%;        
         object-fit: fill;
     }
 
@@ -480,8 +471,8 @@ label {
         background-position: center top;
     }
 
-    /* -----------------------------------------
-                FEATURE SECTION
+    /* ------------------------------------------------------
+                FEATURE SECTION - DESKTOP SITE
         ---------------------------------------------------- */
     .feature__container {
         flex-direction: column;
@@ -498,8 +489,8 @@ label {
         margin-bottom: 30px;
     }
 
-    /* -----------------------------------------
-                CARDS SECTION
+    /* ------------------------------------------------------
+                CARDS SECTION  - DESKTOP SITE
         ---------------------------------------------------- */
 
     .cards {

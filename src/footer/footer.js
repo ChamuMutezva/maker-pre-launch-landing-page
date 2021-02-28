@@ -1,7 +1,8 @@
 import { useState } from 'react'
 const Footer = () => {
     const inputs = Array.from(document.querySelectorAll(".email__address"))
-
+    const inputfield = document.querySelector(".email__address") //giving null result
+    console.log(inputfield)
     inputs.forEach(input => {
         const label = document.querySelector("label")
         const errorDisplay = document.querySelector(".display__error")
@@ -26,11 +27,11 @@ const Footer = () => {
     //console.log(input)
     const [newdata, setNewdata] = useState('')
     const addNewData = (evt) => {
-        console.log("form handler", evt.target)
+      //  console.log("form handler", evt.target)
         evt.preventDefault()
     }
     const changeHandler = (evt) => {
-        console.log(evt.target.value)
+      //  console.log(evt.target.value)
         setNewdata(evt.target.value)
     }
     return (
