@@ -217,14 +217,13 @@ form {
 
 footer {
     margin-bottom: 100px;
-}
-
-.footer__heading {
     background-image: url("../assets/bg-footer-squiggle.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-top: 125px;
+}
 
+.footer__heading {
+    margin-top: 125px;
 }
 
 .footer__title {
@@ -525,9 +524,17 @@ label {
         flex-wrap: nowrap;
         margin-top: 35px;
     }
+
     .pricing {
         width: 45%;
         margin: auto;
+    }
+
+    /* ------------------------------------------------------
+                FOOTER SECTION  - DESKTOP SITE
+        ---------------------------------------------------- */
+    .footer__title {
+        font-size: 2rem;
     }
 
 }

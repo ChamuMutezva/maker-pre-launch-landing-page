@@ -3,6 +3,7 @@ const Footer = () => {
     const inputs = Array.from(document.querySelectorAll(".email__address"))
     const inputfield = document.querySelector(".email__address") //giving null result
     console.log(inputfield)
+    console.log(inputs)
     inputs.forEach(input => {
         const label = document.querySelector("label")
         const errorDisplay = document.querySelector(".display__error")

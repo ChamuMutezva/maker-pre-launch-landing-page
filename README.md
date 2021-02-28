@@ -2,6 +2,20 @@
 This is a Frontend Mentor challenge that i completed using React. I am using these Frontend challenges to
 improve my programming skills.
 
+## Technology used 
+### IntersectionImage - Intersection Observer Api
+An api to use for lazy loading images for react applications. For more information see
+the following link [react-intersection-image](https://www.npmjs.com/package/react-intersection-image)
+- to install it - `npm install react-intersection-image --save`
+- usage - Simply swap an **img** component for **IntersectionImage** to load images when they enter the viewport:
+- ```import IntersectionImage from 'react-intersection-image';
+
+        export default () => (
+            <IntersectionImage src="path/to/image" />
+        );
+    ```
+    - adding a transition `<IntersectionImage src="path/to/image" style={{ transition: 'opacity 500ms linear' }} />`
+
 ## What i learnt
 Setting styles on components using props of boolean type. Assign a class to the 
 component when the value of the prop is either true or false. Used this method
